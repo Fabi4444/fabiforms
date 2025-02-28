@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FabisForms</title>
+</head>
+<body>
+
+<h1>Fabis Forms</h1>
+<p>für einfache, bessere und unsicherere Umfragen</p>
+
+<button id="createbtn">Neue Umfrage erstellen</button>
+
+</body>
+</html>
+
+<script>
+    const createbtn = document.getElementById("createbtn");
+    
+    
+    createbtn.onclick=function(){
+        console.log("creating new form");
+        window.location.href += "register.html";
+
+    }
+</script>

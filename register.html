@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+
+<h1>Guten Tag</h1>
+<p>
+    Bitte gib deinen Namen ein. achte darauf dass er eindeutig auf dich zurückfürbar ist 
+    (wichtig für sehr verbreitete Namen wie Julia, Manuel, ...)
+</p>
+<input type="text" id="nameInp">
+<br>
+<button id="submit">Weiter</button>
+
+<button id="testbtn">tesbtn</button>
+
+</body>
+</html>
+
+<script>
+    
+    const submitbtn = document.getElementById("submit");
+    const nameInp = document.getElementById("nameInp");
+    
+    submitbtn.onclick=function(){
+        console.log("Name " + nameInp.value);
+        document.cookie = nameInp.value;
+    }
+
+    const testbtn = document.getElementById("testbtn");
+    testbtn.onclick=function(){
+        console.log("Coocie " + document.cookie);
+        
+    }
+</script>
